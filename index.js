@@ -1,17 +1,23 @@
  //require('dotenv').config({path:'./env'})
- import dotenv from 'dotenv'
+//  import dotenv from 'dotenv'
 
-import mongoose from "mongoose";
- import { DB_NAME } from "./constant";
- import connectDB from "./db";
+//  import mongoose from "mongoose";
+//  import { DB_NAME } from "./constant";
+//  import connectDB from "./db";
 
- dotenv.config({path:'/env'})
+//  dotenv.config({path:'/env'})
 
-  connectDB();
-
-
+//   connectDB();
 
 
+
+
+import dotenv from 'dotenv';
+import connectDB from './src/db/db.js';
+
+dotenv.config({ path: '/.env' }); // Ensure the path is correct
+
+connectDB();
 
 
 

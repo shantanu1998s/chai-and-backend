@@ -7,6 +7,7 @@ const connectDB = async () => {
       useNewUrlParser: true,
       useUnifiedTopology: true,
     });
+    console.log(connectionInstance)
     console.log(`\n mongoDB connected !! DB HOST : ${connectionInstance.connection.host}`);
   } catch (error) {
     console.error('MongoDB connection error:', error);
